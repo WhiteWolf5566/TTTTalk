@@ -406,33 +406,39 @@
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
                         <input type="text" name="name" required placeholder="John Doe" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Company Name</label>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Company Name *</label>
                         <input type="text" name="company" required placeholder="Acme Inc." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
                         <input type="email" name="email" required placeholder="john@company.com" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Estimated Users / Extensions</label>
-                        <select name="users" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
-                            <option value="1 - 5 Users">1 - 5 Users</option>
-                            <option value="6 - 20 Users">6 - 20 Users</option>
-                            <option value="21 - 50 Users">21 - 50 Users</option>
-                            <option value="50+ Users">50+ Users</option>
-                        </select>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" required placeholder="(555) 000-0000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
                     </div>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">How can we help your business?</label>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Estimated Users / Extensions *</label>
+                    <select name="users" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                        <option value="" disabled selected>Select estimated user count...</option>
+                        <option value="1 - 5 Users">1 - 5 Users</option>
+                        <option value="6 - 20 Users">6 - 20 Users</option>
+                        <option value="21 - 50 Users">21 - 50 Users</option>
+                        <option value="50+ Users">50+ Users</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">How can we help your business? *</label>
                     <textarea name="message" required rows="4" placeholder="Tell us about your current phone setup or specific features you need..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
                 </div>
 
